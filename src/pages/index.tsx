@@ -19,7 +19,7 @@ export default function Home() {
   const [strength, setStrength] = useState(2);
   const [sliderVal, setSliderVal] = useState(10);
   const [settings, setSettings] = useState({
-    uppercase: false,
+    uppercase: true,
     numbers: false,
     symbols: false,
   });
