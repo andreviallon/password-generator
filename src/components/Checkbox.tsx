@@ -1,8 +1,24 @@
-export const Checkbox = ({ title }: { title: string }) => {
+import { ChangeEvent } from "react";
+
+export const Checkbox = ({
+  label,
+  isChecked,
+  onCheck,
+}: {
+  label: string;
+  isChecked: boolean;
+  onCheck: any;
+}) => {
   return (
-    <div className="flex items-center">
-      <input type="checkbox" value="123" className="w-4 h-4 cursor-pointer" />
-      <label className="ml-3">{title}</label>
-    </div>
+    <label className="flex items-center">
+      <input
+        id="checkbox"
+        type="checkbox"
+        checked={isChecked}
+        onChange={onCheck}
+        className="w-4 h-4 cursor-pointer"
+      />
+      <span className="ml-3 cursor-pointer">{label}</span>
+    </label>
   );
 };
