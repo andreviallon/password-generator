@@ -1,5 +1,3 @@
-import { ChangeEvent } from "react";
-
 export const Checkbox = ({
   label,
   isChecked,
